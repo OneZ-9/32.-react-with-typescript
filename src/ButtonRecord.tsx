@@ -24,7 +24,8 @@ export default function ButtonRecord({
     <button
       onClick={onClick}
       style={{
-        borderRadius: `${borderRadius.topLeft}px ${borderRadius.topRight}px ${borderRadius.bottomRight}px ${borderRadius.bottomLeft}px`,
+        borderRadius: `${borderRadius.topLeft}px ${borderRadius.topRight}px 
+        ${borderRadius.bottomRight}px ${borderRadius.bottomLeft}px`,
       }}
     >
       {children}

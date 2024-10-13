@@ -7,7 +7,8 @@ type ButtonProps = {
   //   textColor: string;
   // };
 
-  // We can get type from React for CSS out of the box instead declaring own object with all the properties
+  // We can get type from React for CSS out of the box...
+  // instead declaring own object with all the properties
   // Then React will specify the object for us
   // Now we can pass any css property
   style: React.CSSProperties;

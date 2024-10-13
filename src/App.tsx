@@ -1,10 +1,15 @@
+import { useState } from "react";
 import "./App.css";
 import ButtonFunction from "./ButtonFunction";
 import ButtonGeneral from "./ButtonGeneral";
 import ButtonRecord from "./ButtonRecord";
 import ButtonStyleObj from "./ButtonStyleObj";
+import ButtonHook from "./ButtonHook";
+import ButtonAttributes from "./ButtonAttributes";
 
 function App() {
+  const [count, setCount] = useState<number>(0);
+
   return (
     <>
       <ButtonGeneral
@@ -60,6 +65,22 @@ function App() {
       >
         Click me!
       </ButtonFunction>
+
+      <ButtonHook
+        setCount={setCount}
+        style={{
+          backgroundColor: "red",
+          fontSize: "30px",
+          color: "white",
+          padding: "12px 20px 12px 20px",
+          borderRadius: "50px",
+          margin: "10px 20px",
+        }}
+      >
+        Count: {count}
+      </ButtonHook>
+
+      <ButtonAttributes type="submit" autoFocus={true} />
     </>
   );
 }
